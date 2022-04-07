@@ -36,7 +36,7 @@ a{
     content:" 🐾"
 }
 .conteiner{
-    width: 50%;
+    width: 100%;
     height: 100vz;
     display: flex;
     flex-direction:column;
@@ -53,14 +53,14 @@ a{
 }
 .dogs{
     padding: 10px;
-    width: 500px;
+    width: 100%;
     display: flex;
     /*border: solid;*/
     flex-wrap: wrap;
 }
 .cats{
     padding: 10px;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     /*border: solid;*/
@@ -97,8 +97,9 @@ h5{
         display: flex;
         flex-direction: column;
         background-color: lightsalmon;
-        justify-items: flex-end;
         flex-wrap: wrap;
+        height: 80px;
+        width: 100%;
     }
     .top{
         display: flex;
@@ -111,9 +112,14 @@ h5{
     .nav{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: flex-start;
          
     }
+    .img{
+        width: 60%;
+    }
+    
     h1{ display:none;}
    
        a:hover{
@@ -133,5 +139,63 @@ h5{
 }
 
 
+@media(max-width:350px ){
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightsalmon;
+        flex-wrap: wrap;
+        height: 80px;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .frase{
+        font-size: x-small;
+        text-align: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+         
+    }
+
+    h1{ display:none;}
+   
+       a:hover{
+        color: cornflowerblue;
+    }
+       
+    .rodape{
+        width: 100%;
+        background-color:lightsalmon ;
+    
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+    .dogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .cats{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img{
+        width: 100%;
+    }
+    h5{ 
+       
+        color: aliceblue;
+    }
+}
 
 
